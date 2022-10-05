@@ -29,7 +29,7 @@
 }
 
 .MMM-air-quality__container:not(.MMM-air-quality__container--colored) .MMM-air-quality__icon *[fill^="#"] {
-  fill: #ffffff;
+  fill: var(--color-text-bright);
 }
 
 .MMM-air-quality__number {
