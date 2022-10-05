@@ -1,0 +1,52 @@
+.MMM-air-quality__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  padding: 15px;
+  border: 1px solid var(--color-text-dimmed);
+  border-radius: 20px;
+  color: var(--color-text-bright);
+}
+
+.MMM-air-quality__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.MMM-air-quality__quality-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.MMM-air-quality__icon {
+  padding: 10px 5px;
+}
+
+.MMM-air-quality__container:not(.MMM-air-quality__container--colored) .MMM-air-quality__icon *[fill^="#"] {
+  fill: #ffffff;
+}
+
+.MMM-air-quality__number {
+  padding: 10px;
+  margin: 0;
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.MMM-air-quality__main-pollutant {}
+
+.MMM-air-quality__pollutant-text {
+  color: var(--color-text-dimmed);
+}
+
+.MMM-air-quality__pollutant-type {
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+}
