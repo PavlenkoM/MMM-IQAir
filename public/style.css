@@ -25,7 +25,12 @@
 }
 
 .MMM-air-quality__icon {
-  padding: 10px 5px;
+  padding: 0 5px;
+}
+
+.MMM-air-quality__icon svg {
+  width: 65px;
+  height: 65px;
 }
 
 .MMM-air-quality__container:not(.MMM-air-quality__container--colored) .MMM-air-quality__icon *[fill^="#"] {
@@ -33,20 +38,12 @@
 }
 
 .MMM-air-quality__number {
-  padding: 10px;
+  padding: 5px;
   margin: 0;
   font-size: 46px;
   font-weight: 500;
 }
 
-.MMM-air-quality__main-pollutant {}
-
-.MMM-air-quality__pollutant-text {
-  color: var(--color-text-dimmed);
-}
-
-.MMM-air-quality__pollutant-type {
-  display: inline-block;
-  margin: 0;
+.MMM-air-quality__location {
   font-size: 20px;
 }

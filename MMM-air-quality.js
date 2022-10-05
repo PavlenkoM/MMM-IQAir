@@ -100,7 +100,7 @@ Module.register(AIR_QUALITY_MODULE_NAME, {
     },
 
     getAirQualityContent: async function() {
-        const { aqius, mainus } = this.airData;
+        const { aqius, mainus, city, country } = this.airData;
         const qualityItem = this.getCurrentStatus(aqius);
 
         if (!qualityItem) {
@@ -118,9 +118,8 @@ Module.register(AIR_QUALITY_MODULE_NAME, {
               <h2 class="${this.modName}__number">${aqius}</h2>
           </div>
 
-          <div class="${this.modName}__main-pollutant">
-              <span class="${this.modName}__pollutant-text">Pollutant:</span>
-              <h3 class="${this.modName}__pollutant-type">${this.units[mainus]}</h3>
+          <div class="${this.modName}__location">
+              ${city} ${country}
           </div>
         </div>
     `;
@@ -130,9 +129,10 @@ Module.register(AIR_QUALITY_MODULE_NAME, {
         try {
             const res = await fetch(`/air-quality?key=${this.config.key}`);
             const resBody = await res.json();
-            const { current } = resBody.data;
+            const { current, city, country } = resBody.data;
             const { pollution } = current;
             this.airData = {
+				city, country,
                 aqius: pollution.aqius,
                 mainus: pollution.mainus
             };
