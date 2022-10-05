@@ -5,7 +5,7 @@ Module.register(AIR_QUALITY_MODULE_NAME, {
 
     defaults: {
         key: '',
-        updateTime: 1, // in minutes
+        updateTime: 30, // in minutes
         isColored: false,
     },
 
