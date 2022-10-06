@@ -3,8 +3,7 @@
 This is an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It shows the current status of air quality.
 Based on data from [IQAir](https://www.iqair.com).
 
-<img width="223" alt="Знімок екрана 2022-10-06 о 23 40 56" src="https://user-images.githubusercontent.com/9430298/194422874-bbcc6c6c-e7aa-41d5-b32f-4fe7676b0538.png">
-<img width="225" alt="Знімок екрана 2022-10-06 о 23 40 27" src="https://user-images.githubusercontent.com/9430298/194422891-30041775-34a9-4535-80eb-75103aaecb40.png">
+<img width="223" alt="Знімок екрана 2022-10-06 о 23 40 56" src="https://user-images.githubusercontent.com/9430298/194422874-bbcc6c6c-e7aa-41d5-b32f-4fe7676b0538.png"> <img width="225" alt="Знімок екрана 2022-10-06 о 23 40 27" src="https://user-images.githubusercontent.com/9430298/194422891-30041775-34a9-4535-80eb-75103aaecb40.png">
 
 
 
