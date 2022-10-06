@@ -1,4 +1,4 @@
-.MMM-air-quality__container {
+.MMM-IQAir__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -11,39 +11,39 @@
   color: var(--color-text-bright);
 }
 
-.MMM-air-quality__title {
+.MMM-IQAir__title {
   margin: 0;
   font-weight: 700;
   font-size: 26px;
 }
 
-.MMM-air-quality__quality-block {
+.MMM-IQAir__quality-block {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
   align-items: center;
 }
 
-.MMM-air-quality__icon {
+.MMM-IQAir__icon {
   padding: 0 5px;
 }
 
-.MMM-air-quality__icon svg {
+.MMM-IQAir__icon svg {
   width: 65px;
   height: 65px;
 }
 
-.MMM-air-quality__container:not(.MMM-air-quality__container--colored) .MMM-air-quality__icon *[fill^="#"] {
+.MMM-IQAir__container:not(.MMM-IQAir__container--colored) .MMM-IQAir__icon *[fill^="#"] {
   fill: var(--color-text-bright);
 }
 
-.MMM-air-quality__number {
+.MMM-IQAir__number {
   padding: 5px;
   margin: 0;
   font-size: 46px;
   font-weight: 500;
 }
 
-.MMM-air-quality__location {
+.MMM-IQAir__location {
   font-size: 20px;
 }
