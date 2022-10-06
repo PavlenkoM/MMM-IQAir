@@ -14,11 +14,23 @@ module.exports = NodeHelper.create({
 
   loadAirQualityData: async function (req, res) {
 	try {
-		const key = req.query.key;
+		const { key, lat, lon } = req.query;
 		if (!key) {
 			throw new Error('No API key');
 		}
-		const airRaidData = await this.fetchRemoteData(`https://api.airvisual.com/v2/nearest_city?key=${key}`);
+
+		let requestOptionsArr = [`key=${key}`];
+
+		if (lat && lon) {
+			requestOptionsArr = [
+				...requestOptionsArr,
+				`lat=${lat}`,
+				`lon=${lon}`
+			];
+		}
+
+		const requestOptions = requestOptionsArr.join('&');
+		const airRaidData = await this.fetchRemoteData(`https://api.airvisual.com/v2/nearest_city?${requestOptions}`);
 		res.send(airRaidData);
 	} catch (e) {
 		console.error(e);

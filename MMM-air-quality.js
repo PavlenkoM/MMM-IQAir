@@ -126,8 +126,10 @@ Module.register(AIR_QUALITY_MODULE_NAME, {
     },
 
     loadData: async function() {
+        const {lat, lon} = this.config.coordinates || {};
+
         try {
-            const res = await fetch(`/air-quality?key=${this.config.key}`);
+            const res = await fetch(`/air-quality?key=${this.config.key}&lat=${lat}&lon=${lon}`);
             const resBody = await res.json();
             const { current, city, country } = resBody.data;
             const { pollution } = current;
@@ -194,5 +196,5 @@ Module.register(AIR_QUALITY_MODULE_NAME, {
 			color: ${qualityItem.titleColor};
 		` :
 		'';
-	}
+	},
 });
