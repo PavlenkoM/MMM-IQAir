@@ -22,6 +22,7 @@
   flex-direction: row;
   justify-content: stretch;
   align-items: center;
+  margin: 5px 0;
 }
 
 .MMM-IQAir__icon {
@@ -40,7 +41,8 @@
 .MMM-IQAir__number {
   padding: 5px;
   margin: 0;
-  font-size: 46px;
+  font-size: 60px;
+  line-height: 1;
   font-weight: 500;
 }
 
