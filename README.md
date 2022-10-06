@@ -32,5 +32,5 @@ If widget should be configured to different location should be added config `coo
 | --- | --- | --- | --- |
 | `key` | API key from [https://www.iqair.com/commercial/air-quality-monitors/airvisual-platform/api](https://www.iqair.com/commercial/air-quality-monitors/airvisual-platform/api) | string | ✔️ |
 | `isColored` | Enable colored schema for widget view | boolean |  |
-| `coordinates` | Object with coordinates `{ lat: 00.00000, lon: 00.00000 }` | `{ lat/lon: number }` |  |
+| `coordinates` | Object with coordinates `{ lat: 00.00000, lon: 00.00000 }` | `[key: 'lat' \| 'lon']: number }` |  |
 
