@@ -1,4 +1,4 @@
-const AIR_QUALITY_MODULE_NAME = "MMM-air-quality";
+const AIR_QUALITY_MODULE_NAME = "MMM-IQAir";
 
 Module.register(AIR_QUALITY_MODULE_NAME, {
     requiresVersion: "2.20.0",
